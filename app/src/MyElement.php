@@ -11,7 +11,7 @@ class MyElement extends BaseElement
     private static $description = 'What my custom element does';
 
     private static $has_many = [
-        'Blocks' => Block::class,
+        'things' => Thing::class,
     ];
 
     private static $inline_editable = false;
@@ -19,14 +19,8 @@ class MyElement extends BaseElement
 	public function getCMSFields()
     {
         $fields = parent::getCMSFields();
-
-        // ...
-
         return $fields;
     }
 
-    public function getType()
-    {
-        return 'My Element';
-    }
+
 }

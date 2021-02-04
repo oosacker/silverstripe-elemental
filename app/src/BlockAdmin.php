@@ -2,7 +2,7 @@
 
 use SilverStripe\Admin\ModelAdmin;
 
-class PlayerAdmin extends ModelAdmin
+class BlockAdmin extends ModelAdmin
 {
     private static $managed_models = [
         Block::class,
